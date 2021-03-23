@@ -1,5 +1,7 @@
+/* Base Styles */
+
 body {
-  padding: 50px;
+  padding: .5em;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -9,4 +11,20 @@ a {
 
 h1, p {
   color: red;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Navigation */
+
+nav .flex-container {
+  display: flex;
+  flex: 0 1;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  padding: 1em;
 }
