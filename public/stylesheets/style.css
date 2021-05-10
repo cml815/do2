@@ -17,6 +17,14 @@ ul {
   list-style-type: none;
 }
 
+/* Flexbox */
+
+.flex-container {
+  display: flex;
+  flex: 0 1;
+} 
+
+
 /* Navigation */
 
 nav .flex-container {
@@ -27,4 +35,11 @@ nav .flex-container {
 
 .nav-item {
   padding: 1em;
+}
+
+/* Home Page */
+
+.hero-container {
+  padding: 2em;
+  flex-direction: column;
 }
