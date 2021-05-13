@@ -13,6 +13,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
+    "node-sass": "^6.0.0",
     "sass": "^1.32.8",
     "save-dev": "0.0.1-security"
   }
