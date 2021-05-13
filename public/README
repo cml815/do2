@@ -1,3 +1,7 @@
 Dart Sass implementation
 
 https://www.devextent.com/dart-sass-javascript-implementation-npm-compile-sass/
+
+
+Boot up app
+debug=do:* npm start

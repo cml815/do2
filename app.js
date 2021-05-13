@@ -4,7 +4,8 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const exphbs = require('express-handlebars');
-const sass = require('sass');
+// const sass = require('sass');
+const sass = require('node-sass');
 
 const port = 5000
 
@@ -23,12 +24,17 @@ app.engine('hbs', exphbs({
   extname: '.hbs'
 }));
 
+// Sass
+
+app.use(sass.middleware({ src: __dirname + '/public' }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
   res.render('home');
 });
 
 /* SASS setup - const result = sass.renderSync({file: style.scss}); */
+
 
 app.set('views', path.join(__dirname, 'views'));
 
