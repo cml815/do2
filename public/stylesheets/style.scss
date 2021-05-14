@@ -1,11 +1,34 @@
+// SCSS variables
 
-$font-stack:    Times, sans-serif;
+$font-main: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 $primary-color: #999;
 
+// Base styles
+
 body {
-  font: 100% $font-stack;
+  font: 100% $font-main;
   color: $primary-color;
 }  
+
+/* Base Styles */
+
+body {
+  padding: .5em;
+  font: 
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1, p {
+  color: $primary-color;
+}
+
+ul {
+  list-style-type: none;
+}
+
   /* Flexbox */
 
 .flex-container {
@@ -16,7 +39,6 @@ body {
 .flex-col {
   flex-direction: column; 
 }
-
 
 /* Navigation */
 

@@ -5,7 +5,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const exphbs = require('express-handlebars');
 // const sass = require('sass');
-const sass = require('node-sass');
+// const sass = require('node-sass');
+const sassMiddleware = require('node-sass-middleware')
 
 const port = 5000
 
@@ -26,8 +27,15 @@ app.engine('hbs', exphbs({
 
 // Sass
 
-app.use(sass.middleware({ src: __dirname + '/public' }));
-app.use(express.static(path.join(__dirname, 'public')));
+/* app.use(sass.middleware({ src: __dirname + '/public' }));
+app.use(express.static(path.join(__dirname, 'public'))); */
+
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public'),
+  dest: path.join(__dirname, 'public'),
+  indentedSyntax: false, // true = .sass and false = .scss
+  sourceMap: true
+}));
 
 app.get('/', function (req, res) {
   res.render('home');
