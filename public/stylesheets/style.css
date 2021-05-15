@@ -24,7 +24,13 @@ ul {
   list-style-type: none;
 }
 
-  /* Flexbox */
+/* LAYOUT */
+
+/* General layout */
+
+
+
+/* Flexbox */
 
 .flex-container {
   display: flex;
@@ -34,6 +40,13 @@ ul {
 .flex-col {
   flex-direction: column; 
 }
+
+.centered-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 
 /* Navigation */
 
@@ -53,4 +66,14 @@ nav .flex-container {
   padding: 2em;
   flex-direction: column;
 }
+
+.hero {
+    height: 100;
+}
+
+.hero h1 {
+    width: 60%;
+}
+
+
 
