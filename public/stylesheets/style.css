@@ -10,6 +10,7 @@ html {
   
   body {
     min-height: 100%;
+    max-width: 100%;
     margin: 0;
   }
 
@@ -82,6 +83,7 @@ nav .flex-container {
     height: 80vh;
     padding: 1em;
     flex-direction: column;
+    background-color: yellow;
 }
 
 .hero h1 {
