@@ -1,15 +1,21 @@
 // Base styles
 
-body {
-  font: 100% $font-main;
-  color: $primary-color;
-}  
+ 
 
 /* Base Styles */
 
+html {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    margin: 0;
+  }
+
 body {
   padding: .5em;
-  font: 14px Verdana, sans-serif; 
+  font: 16px Verdana, sans-serif; 
 }
 
 a {
@@ -35,7 +41,16 @@ ul {
 .flex-container {
   display: flex;
   flex: 0 1;
+  @media (max-width: 400px) {
+      flex-direction: column;
+  }
 } 
+
+@media (max-width: 400px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
 
 .flex-col {
   flex-direction: column; 
@@ -62,13 +77,11 @@ nav .flex-container {
 
 /* Home Page */
 
-.hero-container {
-  padding: 2em;
-  flex-direction: column;
-}
-
 .hero {
-    height: 100;
+    width: 100vw;
+    height: 80vh;
+    padding: 1em;
+    flex-direction: column;
 }
 
 .hero h1 {
