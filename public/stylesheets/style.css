@@ -1,8 +1,17 @@
 // Base styles
 
- 
+
 
 /* Base Styles */
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    }
+
+* {border: 1px solid red;}
 
 html {
     height: 100%;
@@ -10,8 +19,6 @@ html {
   
   body {
     min-height: 100%;
-    max-width: 100%;
-    margin: 0;
   }
 
 body {
