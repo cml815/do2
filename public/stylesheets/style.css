@@ -1,7 +1,5 @@
 // Base styles
 
-
-
 /* Base Styles */
 
 *, *:before, *:after {
@@ -41,8 +39,6 @@ ul {
 /* LAYOUT */
 
 /* General layout */
-
-
 
 /* Flexbox */
 
@@ -96,5 +92,4 @@ nav .flex-container {
     width: 60%;
 }
 
-
-
+/*# sourceMappingURL=style.css.map */

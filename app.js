@@ -7,6 +7,7 @@ const exphbs = require('express-handlebars');
 // const sass = require('sass');
 // const sass = require('node-sass');
 const sassMiddleware = require('node-sass-middleware')
+const favicon = require("serve-favicon");
 
 const port = 5000
 
@@ -14,6 +15,10 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
 const app = express();
+
+// favicon 
+
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 // view engine setup
 

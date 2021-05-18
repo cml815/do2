@@ -17,6 +17,7 @@
     "node-sass-middleware": "^0.11.0",
     "path": "^0.12.7",
     "sass": "^1.32.8",
-    "save-dev": "0.0.1-security"
+    "save-dev": "0.0.1-security",
+    "serve-favicon": "^2.5.0"
   }
 }
