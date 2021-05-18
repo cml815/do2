@@ -40,6 +40,10 @@ ul {
 
 /* General layout */
 
+.center {
+  text-align: center;
+}
+
 /* Flexbox */
 
 .flex-container {
