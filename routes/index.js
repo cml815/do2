@@ -6,14 +6,15 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 }); 
 
-router.get('/', (req, res) => {
-  res.render('about');
-});
 
 /*
 
 router.get('/', (req, res) => {
   res.render('home');
+});
+
+router.get('/', (req, res) => {
+  res.render('about');
 });
 
 router.get('/contact', (req, res) => {

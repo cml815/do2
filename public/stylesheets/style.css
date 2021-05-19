@@ -18,8 +18,11 @@ html {
     }
 
 body {
-  padding: .5em;
   min-height: 100%;
+  padding: 1em;
+  font-size: 16px;
+  background-color: #f2f4f8;
+  color: #353535;
 }
 
 a {
@@ -31,8 +34,30 @@ ul, ol {
   list-style-type: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  color: $primary-color;
+h1 {
+  font-size: 2em;
+  line-height: 1.8em;
+}
+
+h2 {
+  font-size: 1.6em;
+  line-height: 2.4em;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 2.2em;
+}
+
+h4, h5, h6 {
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin: 2em 0;
 }
 
 /* LAYOUT */
@@ -92,11 +117,11 @@ nav .flex-container {
 }
 
 h1:before{
-  content: 'Communications experts';
+  content: 'Expert writers and communication pros';
   font-size: 400%;
   animation-name: head;
   animation-duration: 6s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 0;
 }
 
 @keyframes head {
@@ -104,9 +129,9 @@ h1:before{
   25% {font-size:370%; opacity:0;}
   50% {font-size:400%; opacity:1;}
   65% {font-size:370%; opacity:0;}
-  80% {font-size:400%; opacity:1; content: "Changed Text"} 
+  80% {font-size:400%; opacity:1; content: "Harness the power of persuasion"} 
   /* 90% {font-size:370%; opacity:0;} */
-  100% {font-size:400%;opacity:1; content: "Changed Text"}
+  100% {font-size:400%;opacity:1; content: "Harness the power of persuasion"}
 }
 
 .hero h1 {
