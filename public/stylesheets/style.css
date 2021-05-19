@@ -92,10 +92,10 @@ nav .flex-container {
 }
 
 h1:before{
-  content: 'Original Text';
+  content: 'Communications experts';
   font-size: 400%;
   animation-name: head;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-iteration-count: 1;
 }
 
