@@ -1,13 +1,13 @@
 /* Base Styles */
 
+/* {border: 1px solid red;} */
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     max-width: 100%;
     }
-
-/* {border: 1px solid red;} */
 
 html {
     height: 100%;
@@ -24,9 +24,14 @@ body {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
 
-h1, p {
+ul, ol {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
   color: $primary-color;
 }
 
