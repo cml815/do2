@@ -25,6 +25,14 @@ body {
   color: #353535;
 }
 
+.body-wrap {
+  padding: 3%;
+}
+
+.body-wrap > .no-pad {
+  padding: 0;
+}
+
 a {
   color: #00B7FF;
   text-decoration: none;
