@@ -76,6 +76,15 @@ p {
   text-align: center;
 }
 
+.card {
+  border: solid gray 1px;
+
+}
+
+.card-flat {
+
+}
+
 /* Flexbox */
 
 .flex-container {
@@ -100,6 +109,10 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .spaced {
+    justify-content: space-between;
   }
 
 
