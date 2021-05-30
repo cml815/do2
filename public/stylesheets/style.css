@@ -124,6 +124,19 @@ animation-iteration-count: 0;
 100% {font-size:400%;opacity:1; content: "Harness the power of persuasion"}
 
 */
+/* Buttons */
+.btn {
+  background-color: #58B09C;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; }
+
+.btn.rounded {
+  border-radius: 20%; }
+
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
