@@ -151,7 +151,6 @@ padding: 1em;
   width: 100vw;
   height: 80vh;
   flex-direction: column;
-  background-color: yellow;
 }
 
 /* 
@@ -178,6 +177,8 @@ animation-iteration-count: 0;
 
 .btn {
   background-color: #58B09C;
+  height: 50px;
+  width: 300px;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -187,8 +188,7 @@ animation-iteration-count: 0;
 }
 
 .btn.rounded {
-  border-radius: 20%;
-
+  border-radius: 15%;
 }
 
 

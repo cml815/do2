@@ -102,8 +102,7 @@ nav .flex-container {
   width: 100%;
   width: 100vw;
   height: 80vh;
-  flex-direction: column;
-  background-color: yellow; }
+  flex-direction: column; }
 
 /* 
 h1:before{
@@ -127,6 +126,8 @@ animation-iteration-count: 0;
 /* Buttons */
 .btn {
   background-color: #58B09C;
+  height: 50px;
+  width: 300px;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -135,7 +136,7 @@ animation-iteration-count: 0;
   display: inline-block; }
 
 .btn.rounded {
-  border-radius: 20%; }
+  border-radius: 15%; }
 
 /*# sourceMappingURL=style.css.map */
 
