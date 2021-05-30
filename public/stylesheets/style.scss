@@ -1,7 +1,11 @@
 // SCSS variables
 
-$font-main: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+$font-wide: 16px 700 "acumin-pro", Helvetica, Arial, sans-serif;
 $primary-color: #999;
+
+$font-narrow: 16px 400 acumin-pro-semi-condensed, sans-serif;
+
+$font-narrow-bold: 16px 700 acumin-pro-semi-condensed, sans-serif;
 
 body {
   font: 100% $font-main;
