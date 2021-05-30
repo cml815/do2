@@ -1,7 +1,9 @@
+
 // SCSS variables
 
-$font-wide: 16px 700 "acumin-pro", Helvetica, Arial, sans-serif;
 $primary-color: #999;
+
+$font-wide: 16px 700 "acumin-pro", Helvetica, Arial, sans-serif;
 
 $font-narrow: 16px 400 acumin-pro-semi-condensed, sans-serif;
 
@@ -152,6 +154,7 @@ padding: 1em;
   background-color: yellow;
 }
 
+/* 
 h1:before{
 content: 'Expert writers and communication pros';
 font-size: 400%;
@@ -166,13 +169,23 @@ animation-iteration-count: 0;
 50% {font-size:400%; opacity:1;}
 65% {font-size:370%; opacity:0;}
 80% {font-size:400%; opacity:1; content: "Harness the power of persuasion"} 
-/* 90% {font-size:370%; opacity:0;} */
+90% {font-size:370%; opacity:0;}
 100% {font-size:400%;opacity:1; content: "Harness the power of persuasion"}
+
+*/
+
+/* Buttons */
+
+.btn {
+  background-color: #58B09C;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.hero h1 {
-
-}
 
 /*# sourceMappingURL=style.css.map */
 

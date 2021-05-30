@@ -105,36 +105,25 @@ nav .flex-container {
   flex-direction: column;
   background-color: yellow; }
 
-h1:before {
-  content: 'Expert writers and communication pros';
-  font-size: 400%;
-  animation-name: head;
-  animation-duration: 6s;
-  animation-iteration-count: 0; }
+/* 
+h1:before{
+content: 'Expert writers and communication pros';
+font-size: 400%;
+animation-name: head;
+animation-duration: 6s;
+animation-iteration-count: 0;
+}
 
 @keyframes head {
-  0% {
-    font-size: 400%;
-    opacity: 1; }
-  25% {
-    font-size: 370%;
-    opacity: 0; }
-  50% {
-    font-size: 400%;
-    opacity: 1; }
-  65% {
-    font-size: 370%;
-    opacity: 0; }
-  80% {
-    font-size: 400%;
-    opacity: 1;
-    content: "Harness the power of persuasion"; }
-  /* 90% {font-size:370%; opacity:0;} */
-  100% {
-    font-size: 400%;
-    opacity: 1;
-    content: "Harness the power of persuasion"; } }
+0% {font-size:400%; opacity:1;}
+25% {font-size:370%; opacity:0;}
+50% {font-size:400%; opacity:1;}
+65% {font-size:370%; opacity:0;}
+80% {font-size:400%; opacity:1; content: "Harness the power of persuasion"} 
+90% {font-size:370%; opacity:0;}
+100% {font-size:400%;opacity:1; content: "Harness the power of persuasion"}
 
+*/
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
