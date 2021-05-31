@@ -69,13 +69,6 @@ p {
 .flex-container {
   display: flex;
   flex: 0 1; }
-  @media (max-width: 400px) {
-    .flex-container {
-      flex-direction: column; } }
-
-@media (max-width: 400px) {
-  .flex-container {
-    flex-direction: column; } }
 
 .flex-col {
   flex-direction: column; }
@@ -103,6 +96,9 @@ nav .flex-container {
   width: 100vw;
   height: 80vh;
   flex-direction: column; }
+
+.hero h1, .hero h2 {
+  line-height: 1em; }
 
 /* 
 h1:before{

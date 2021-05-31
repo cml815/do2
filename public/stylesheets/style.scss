@@ -106,16 +106,7 @@ border: solid gray 1px;
 .flex-container {
 display: flex;
 flex: 0 1;
-@media (max-width: 400px) {
-    flex-direction: column;
-}
 } 
-
-@media (max-width: 400px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
 
 .flex-col {
 flex-direction: column; 
@@ -153,6 +144,9 @@ padding: 1em;
   flex-direction: column;
 }
 
+.hero h1, .hero h2 {
+  line-height: 1em;
+}
 /* 
 h1:before{
 content: 'Expert writers and communication pros';
