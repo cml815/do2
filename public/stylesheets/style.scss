@@ -176,20 +176,26 @@ animation-iteration-count: 0;
 /* Buttons */
 
 .btn {
-  background-color: #58B09C;
+  background: linear-gradient(
+  35deg
+  ,#8ecc75,#30bf89);
   height: 50px;
   width: 300px;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1em 2em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btn.rounded {
   border-radius: 15%;
+  transition: .3s ease-in-out;
+  border-radius: 100rem;
 }
+
 
 
 /*# sourceMappingURL=style.css.map */
