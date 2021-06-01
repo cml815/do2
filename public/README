@@ -10,3 +10,137 @@ debug=do2:* npm start
 responsive menu 
 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
+
+
+app.js old 
+
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const exphbs = require('express-handlebars');
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+const sassMiddleware = require('node-sass-middleware');
+const favicon = require('serve-favicon');
+const dotenv = require('dotenv').config();
+// unused modules 
+const nodemailer = require('nodemailer');
+const la = require('@toptensoftware/losangeles');
+
+const indexRouter = require('./routes/index');
+const aboutRouter = require('./routes/about')
+const usersRouter = require('./routes/users');
+const workRouter = require('./routes/work');
+const projectsRouter = require('./routes/projects');
+const blogRouter = require('./routes/blog');
+
+const app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+
+// register helpers
+var hbs = exphbs.create({
+  helpers: {
+      now: function (now) {
+        return new Date(now);
+      },
+      sayHello: function () { alert("Hello World") },
+      getStringifiedJson: function (value) {
+          return JSON.stringify(value);
+      },
+      random_num: function () { Math.round(Math.random() * 10)}
+  },
+  defaultLayout: 'main',
+  partialsDir: ['views/partials/']
+});
+
+// Register Handlebars view engine
+app.engine('.hbs', exphbs({defaultLayout: 'default', extname: '.hbs'}));
+// Use Handlebars view engine
+app.set('view engine', '.hbs');
+
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false })); 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true})); // false = querystring and true = qs libs
+app.use(cookieParser());
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public'),
+  dest: path.join(__dirname, 'public'),
+  indentedSyntax: false, // true = .sass and false = .scss
+  sourceMap: true
+}));
+
+app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
+
+// Serve static assets from public
+
+// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join('public')));
+
+// Serve static assets from non-root routes
+/* app.use('/', express.static(__dirname + '/public')); */
+app.use('/work', express.static(__dirname + '/public'));
+app.use('/projects', express.static(__dirname + '/public'));
+app.use('/about', express.static(__dirname + '/public'));
+
+
+// Debugging path problem
+app.use("/public", express.static(path.join(__dirname, 'public')));
+
+app.use('/', indexRouter);
+app.use('/about', aboutRouter);
+app.use('/users', usersRouter);
+app.use('/work', workRouter);
+app.use('/projects', projectsRouter);
+app.use('/blog', blogRouter);
+
+app.post('/submit-form', [
+  body('name').isLength({ min: 3 }),
+  body('email').isEmail(),
+  body('msg').isNumeric()
+], (req, res) => {
+  const errors = validationResult(req)
+  if (!errors.isEmpty()) {
+    return res.status(422).json({ errors: errors.array() })
+  }
+
+  const name  = req.body.name
+  const email = req.body.email
+  const message   = req.body.msg
+})
+
+app.post('/submit-form', function (req, res) {
+  //const username = req.body.username
+  //...
+  console.log(req.body);
+  // res.send(req.body); - sends json data
+  res.send("Thank you for sending us a message!")
+});
+
+// catch 404 and forward to error handler
+
+app.use(function(req, res, next) {
+  next(createError(404));
+});
+
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error', {layout: 'error', bodyClass: 'error', title: 'Error'});
+});
+
+// start server
+app.listen(5000, function(err) {})
+module.exports = app;
