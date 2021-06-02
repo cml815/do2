@@ -1,0 +1,305 @@
+/* @import "variables"; */
+
+$black: rgb(20, 20, 20);
+$sans: 'DM Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+
+ /* * {
+  border: 1px solid red;
+ } */
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  line-height: 1.15; 
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: $sans;
+    font-size: $font-size-base;
+    color: $black;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+}
+@include mobile-plus {
+  body {
+    font-size: 18px;
+  }
+}
+
+main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
+  line-height: 1.25;
+  max-width: 45ch;
+  margin: 0.67em 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  @include mobile-plus {
+    font-size: 2.25em;
+  }
+}
+
+@include mobile-plus {
+  h1.huge {
+    font-size: 3em;
+  }
+}
+
+h2 {  
+    font-size: 1.5em;
+    margin: 0.67em 0;
+}
+
+h2.serif {
+  font-size: 1.4em;
+  line-height: 1.8em;
+  margin: 0.67em 0;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin: 0.67em 0;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+.serif {
+  font-family: $serif;
+}
+
+.sans {
+  font-family: $sans;
+}
+
+p {
+    font-family: $sans;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: .75em;   
+}
+
+p {
+  max-width: $max-width-base;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+li {
+  font-size: 1em;
+  line-height: 1.1em;
+  margin-bottom: .5em;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+li.tight {
+  @include tablet {
+    letter-spacing: -.05em;
+  }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-style: none; /* IE 10 */
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    background-color: transparent; /* IE 10 */ 
+}
+
+a:visited {  
+  color: $black;
+}
+
+a:hover {
+}
+
+a.link-visible, a.blog-link {
+  border-bottom: .10em solid $pool;
+}
+
+
+b,
+strong {
+  font-weight: bolder; /* Chrome, Edge, Safari */
+}
+
+small {
+  font-size: 87.5%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+  hr {
+    width: 50px;
+    color: $black;
+  }
+  
+  hr.vertical-line {
+    transform: rotate(90deg); /* vertical line */
+    width: 50px;
+    color: $black;
+ }
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption, figcaption p {
+  line-height: 1em;
+  max-width: 45ch;
+}
+
+
+/* Contact Form */
+
+button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; 
+    font-size: 100%; 
+    line-height: 1.15; 
+    margin: 0; /* Firefox, Safari */
+  }
+  
+  
+  button,
+  input { /* IE, Edge */
+    overflow: visible;
+  }
+  
+  button,
+  select { /* Edge, Firefox, IE */
+    text-transform: none;
+  }
+  
+  button /*  iOS, Safari reset */,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0; /* Firefox reset*/
+  }
+
+
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  textarea /* IE 10+ */ {
+    overflow: auto;
+  } 
+
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* IE 10 box sizing*/
+    padding: 0; /* IE 10 */
+  }
+
+  fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+  /* Visibility with JS */
+
+
+
+  .toggle-content {
+    display: none;
+  }
+  
+  .toggle-content.is-visible {
+    display: block;
+  }
+
+  @include mobile {
+    .is-visible {
+      display: none; 
+    } 
+  }
+
+  @include mobile-plus {
+    .is-visible-on-mobile {
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
