@@ -39,7 +39,7 @@ ul, ol {
 
 h1 {
   font-size: 2em;
-  line-height: 1.2em; }
+  line-height: 2em; }
 
 h2 {
   font-size: 1.6em;
@@ -55,7 +55,7 @@ h4, h5, h6 {
 
 p {
   font-size: 1em;
-  line-height: 1.4em;
+  line-height: 1.5em;
   margin: 2em 0; }
 
 /* LAYOUT */
@@ -134,9 +134,14 @@ animation-iteration-count: 0;
   cursor: pointer; }
 
 .btn.rounded {
-  border-radius: 15%;
   transition: .3s ease-in-out;
   border-radius: 100rem; }
+
+.btn.large {
+  width: 350px; }
+
+.hero .btn {
+  margin-top: 1em; }
 
 /*# sourceMappingURL=style.css.map */
 
