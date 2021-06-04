@@ -1,3 +1,29 @@
+Project Plan and ToDos
+
+0.1 Preparation
+-Purpose
+-Goals / Objectives
+-Audience
+-Estimated time frame
+-Resources - have and lack
+
+1.0 - Kick Off
++ Roles
+--Copy
+--Web dev
+--Design (web and assets)
+--SEO
+--Dev Ops 
+--Review QA
+
++Sitemap
+
+
+* Site Map - Site architecture (pages)
+*Copy / SEO
+*Dev components (JS)
+*SCSS elements
+
 Dart Sass implementation
 
 https://www.devextent.com/dart-sass-javascript-implementation-npm-compile-sass/
