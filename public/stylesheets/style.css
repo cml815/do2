@@ -1,8 +1,4 @@
 /* @import 'base'; */
-body {
-  font: 100% 16px 400 acumin-pro-semi-condensed, sans-serif;
-  color: #999; }
-
 /* Base Styles */
 /* {border: 1px solid red;} */
 *, *:before, *:after {
@@ -15,12 +11,13 @@ html {
   height: 100%;
   width: 100%; }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-
+/* body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  } */
 body {
   min-height: 100%;
   font-size: 16px;
+  font-family: acumin-pro-semi-condensed, sans-serif;
   background-color: #f2f4f8;
   color: #353535; }
 
