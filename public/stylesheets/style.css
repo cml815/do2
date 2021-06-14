@@ -95,9 +95,6 @@ nav .flex-container {
   height: 80vh;
   flex-direction: column; }
 
-.hero h1, .hero h2 {
-  line-height: 1em; }
-
 /* 
 h1:before{
 content: 'Expert writers and communication pros';
