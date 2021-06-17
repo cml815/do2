@@ -36,7 +36,8 @@ ul, ol {
 
 h1 {
   font-size: 2em;
-  line-height: 2em; }
+  line-height: 2.5em;
+  margin-bottom: 1em; }
 
 h2 {
   font-size: 1.6em;

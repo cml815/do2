@@ -63,7 +63,8 @@ list-style-type: none;
 
 h1 {
 font-size: 2em;
-line-height: 2em;
+line-height: 2.5em;
+margin-bottom: 1em;
 }
 
 h2 {
@@ -201,8 +202,13 @@ animation-iteration-count: 0;
   width: 350px;
 }
 
+.hero .btn-container {
+  text-align: center;
+}
+
 .hero .btn {
   margin-top: 1em;
+  display: inline-block;
 }
 
 
