@@ -201,7 +201,11 @@ padding: 1em;
 
 .fullscreen {
   width: 100vw;
-  background: pink;
+  background-color: pink;
+}
+
+.fullscreen > p {
+  padding: 0 1.5em;
 }
 
 
