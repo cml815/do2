@@ -21,9 +21,6 @@ body {
   background-color: #f2f4f8;
   color: #353535; }
 
-.body-wrap {
-  padding: 3%; }
-
 .body-wrap > .no-pad {
   padding: 0; }
 
@@ -93,32 +90,7 @@ nav .flex-container {
 .nav-item {
   padding: 1em; }
 
-/* Home Page */
-.hero {
-  width: 100%;
-  width: 100vw;
-  height: 80vh;
-  flex-direction: column; }
-
-/* 
-h1:before{
-content: 'Expert writers and communication pros';
-font-size: 400%;
-animation-name: head;
-animation-duration: 6s;
-animation-iteration-count: 0;
-}
-
-@keyframes head {
-0% {font-size:400%; opacity:1;}
-25% {font-size:370%; opacity:0;}
-50% {font-size:400%; opacity:1;}
-65% {font-size:370%; opacity:0;}
-80% {font-size:400%; opacity:1; content: "Harness the power of persuasion"} 
-90% {font-size:370%; opacity:0;}
-100% {font-size:400%;opacity:1; content: "Harness the power of persuasion"}
-
-*/
+/* Layout Components */
 /* Buttons */
 .btn {
   background: linear-gradient(35deg, #8ecc75, #30bf89);
@@ -148,6 +120,16 @@ animation-iteration-count: 0;
 .hero .btn {
   margin-top: 2em;
   display: inline-block; }
+
+.hero {
+  width: 100%;
+  width: 100vw;
+  height: 80vh;
+  flex-direction: column; }
+
+.fullscreen {
+  width: 100vw;
+  background: pink; }
 
 /*# sourceMappingURL=style.css.map */
 
