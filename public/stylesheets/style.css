@@ -189,11 +189,9 @@ nav .flex-container {
   transition: .3s ease-in-out;
   border-radius: 100rem; }
 
-.btn.large {
-  width: 350px; }
-
 .btn.cta {
-  margin-top: 1.5em; }
+  margin-top: 1.5em;
+  width: 350px; }
 
 .cta-container {
   display: flex;
