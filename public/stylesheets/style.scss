@@ -178,6 +178,11 @@ padding: 1em;
 
 }
 
+.cta-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .hero .btn-container {
   text-align: center;
 }
