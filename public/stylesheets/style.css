@@ -175,8 +175,6 @@ nav .flex-container {
 /* Buttons */
 .btn {
   background: linear-gradient(35deg, #8ecc75, #30bf89);
-  height: 50px;
-  width: 300px;
   border: none;
   color: white;
   padding: 1em 2em;
@@ -195,7 +193,8 @@ nav .flex-container {
 
 .cta-container {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between;
+  width: 80%; }
 
 .hero .btn-container {
   text-align: center; }

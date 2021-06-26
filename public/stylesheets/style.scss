@@ -150,8 +150,6 @@ padding: 1em;
   background: linear-gradient(
   35deg
   ,#8ecc75,#30bf89);
-  height: 50px;
-  width: 300px;
   border: none;
   color: white;
   padding: 1em 2em;
@@ -161,6 +159,8 @@ padding: 1em;
   cursor: pointer;
 
 }
+
+
 
 .btn.rounded {
   transition: .3s ease-in-out;
@@ -180,8 +180,11 @@ padding: 1em;
 
 .cta-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 80%;
 }
+
+
 
 .hero .btn-container {
   text-align: center;
