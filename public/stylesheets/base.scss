@@ -1,5 +1,3 @@
-@import 'base';
-
 // SCSS variables
 
 $primary-color: #999;
@@ -104,10 +102,6 @@ border: solid gray 1px;
 
 }
 
-.card-flat {
-
-}
-
 /* Flexbox */
 
 .flex-container {
@@ -128,81 +122,3 @@ flex-direction: column;
 .spaced {
   justify-content: space-between;
 }
-
-
-/* Navigation */
-
-nav .flex-container {
-display: flex;
-flex: 0 1;
-justify-content: flex-end;
-}
-
-.nav-item {
-padding: 1em;
-}
-
-/* Layout Components */
-
-/* Buttons */
-
-.btn {
-  background: linear-gradient(
-  35deg
-  ,#8ecc75,#30bf89);
-  height: 50px;
-  width: 300px;
-  border: none;
-  color: white;
-  padding: 1em 2em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-
-}
-
-.btn.rounded {
-  transition: .3s ease-in-out;
-  border-radius: 100rem;
-
-}
-
-
-.btn.large {
-  width: 350px;
-}
-
-.btn.cta {
-  margin-top: 1.5em;
-
-}
-
-.hero .btn-container {
-  text-align: center;
-}
-
-.hero .btn {
-  margin-top: 2em;
-  display: inline-block;
-}
-
-.hero {
-  width: 100%;
-  width: 100vw;
-  height: 80vh;
-  flex-direction: column;
-}
-
-.hero h1, .hero h2 {
-
-}
-
-.fullscreen {
-  width: 100vw;
-  background-color: pink;
-  padding: 0 1.5em;
-}
-
-/*# sourceMappingURL=style.css.map */
-
