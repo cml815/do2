@@ -129,9 +129,7 @@ nav .flex-container {
 
 .fullscreen {
   width: 100vw;
-  background-color: pink; }
-
-.fullscreen > p {
+  background-color: pink;
   padding: 0 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
