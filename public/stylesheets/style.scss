@@ -176,7 +176,6 @@ padding: 1em;
 .btn.cta {
   margin-top: 1.5em;
   width: 350px;
-
 }
 
 .cta-container {
@@ -191,6 +190,16 @@ padding: 1em;
 .hero .btn {
   margin-top: 2em;
   display: inline-block;
+}
+
+.purple-gradient {
+background-color: #9921e8;
+background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+}
+
+.magenta-gradient {
+background-color: #6617cb;
+background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
 }
 
 .hero {
