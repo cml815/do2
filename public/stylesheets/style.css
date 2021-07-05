@@ -75,7 +75,7 @@ img {
 .flex-col {
   flex-direction: column; }
 
-.centered-container {
+.centered {
   display: flex;
   align-items: center;
   justify-content: center; }
