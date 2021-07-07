@@ -67,6 +67,9 @@ img {
 .card {
   border: solid gray 1px; }
 
+.inner {
+  padding: 0 2em; }
+
 /* Flexbox */
 .flex-container {
   display: flex;
@@ -189,7 +192,8 @@ nav .flex-container {
 
 .cta-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   width: 80%; }
 
 .hero .btn-container {
