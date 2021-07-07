@@ -188,7 +188,7 @@ nav .flex-container {
 
 .btn.cta {
   margin-top: 2em;
-  width: 350px; }
+  width: 80%; }
 
 .cta-container {
   display: flex;
@@ -201,8 +201,7 @@ nav .flex-container {
 
 .hero .btn {
   margin-top: 6em;
-  display: inline-block;
-  height: 10vh; }
+  display: inline-block; }
 
 .purple-gradient {
   background-color: #9921e8;
