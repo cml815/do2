@@ -119,7 +119,7 @@ flex: 0 1;
 flex-direction: column; 
 }
 
-.centered-container {
+.centered {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,9 +147,6 @@ padding: 1em;
 /* Buttons */
 
 .btn {
-  background: linear-gradient(
-  35deg
-  ,#8ecc75,#30bf89);
   border: none;
   color: white;
   text-align: center;
@@ -173,7 +170,7 @@ padding: 1em;
 }
 
 .btn.cta {
-  margin-top: 1.5em;
+  margin-top: 2em;
   width: 350px;
 }
 

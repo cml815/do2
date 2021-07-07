@@ -75,11 +75,6 @@ img {
 .flex-col {
   flex-direction: column; }
 
-.centered {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
 .spaced {
   justify-content: space-between; }
 
@@ -157,7 +152,7 @@ img {
 .flex-col {
   flex-direction: column; }
 
-.centered-container {
+.centered {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -177,7 +172,6 @@ nav .flex-container {
 /* Layout Components */
 /* Buttons */
 .btn {
-  background: linear-gradient(35deg, #8ecc75, #30bf89);
   border: none;
   color: white;
   text-align: center;
@@ -190,7 +184,7 @@ nav .flex-container {
   border-radius: 100rem; }
 
 .btn.cta {
-  margin-top: 1.5em;
+  margin-top: 2em;
   width: 350px; }
 
 .cta-container {
