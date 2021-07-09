@@ -161,6 +161,7 @@ padding: 1em;
 .btn.rounded {
   transition: .3s ease-in-out;
   border-radius: 100rem;
+  width: 250px;
 
 }
 
@@ -173,15 +174,6 @@ padding: 1em;
   margin-top: 2em;
   width: 80%
 }
-
-.cta-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 80%;
-}
-
-
 
 .hero .btn-container {
   text-align: center;

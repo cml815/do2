@@ -184,16 +184,11 @@ nav .flex-container {
 
 .btn.rounded {
   transition: .3s ease-in-out;
-  border-radius: 100rem; }
+  border-radius: 100rem;
+  width: 250px; }
 
 .btn.cta {
   margin-top: 2em;
-  width: 80%; }
-
-.cta-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   width: 80%; }
 
 .hero .btn-container {
