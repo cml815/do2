@@ -81,6 +81,12 @@ img {
 .spaced {
   justify-content: space-between; }
 
+.bg-999 {
+  background-color: #999; }
+
+.bg-ef {
+  background-color: #efefef; }
+
 /* Base Styles */
 /* {border: 1px solid red;} */
 *, *:before, *:after {
