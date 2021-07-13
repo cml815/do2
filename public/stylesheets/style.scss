@@ -171,19 +171,24 @@ padding: 1em;
 .btn.rounded {
   transition: .3s ease-in-out;
   border-radius: 100rem;
-  width: 250px;
+  padding: 0 2.5em;
+  width: 100%;
 
 }
 
+.btn.cta {
+  margin-top: 2em;
+}
+
+.btn > p {
+  line-height: 1em;
+}
 
 .btn.large {
   
 }
 
-.btn.cta {
-  margin-top: 2em;
-  width: 80%
-}
+
 
 .hero .btn-container {
   text-align: center;
@@ -208,12 +213,8 @@ background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
 .hero {
   width: 100%;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   flex-direction: column;
-}
-
-.hero h1, .hero h2 {
-
 }
 
 .fullscreen {
@@ -221,6 +222,9 @@ background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
   height: 100vh;
   padding: 0 1.5em;
 }
+
+
+
 
 /*# sourceMappingURL=style.css.map */
 

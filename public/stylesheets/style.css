@@ -194,11 +194,14 @@ nav .flex-container {
 .btn.rounded {
   transition: .3s ease-in-out;
   border-radius: 100rem;
-  width: 250px; }
+  padding: 0 2.5em;
+  width: 100%; }
 
 .btn.cta {
-  margin-top: 2em;
-  width: 80%; }
+  margin-top: 2em; }
+
+.btn > p {
+  line-height: 1em; }
 
 .hero .btn-container {
   text-align: center; }
@@ -218,7 +221,7 @@ nav .flex-container {
 .hero {
   width: 100%;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   flex-direction: column; }
 
 .fullscreen {
