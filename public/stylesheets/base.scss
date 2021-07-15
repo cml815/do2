@@ -7,6 +7,10 @@
 /* Colors */ 
 
 $primary-color: red;
+$slate: #5f72be;
+$purple-red: #9921e8;
+$purple: #6617cb;
+$hot-pink: #cb218e 74%;
 
 /* $font-base not needed only one font for now */ 
 
@@ -118,6 +122,13 @@ flex-direction: column;
   width: 100vw;
   height: 100vh;
   padding: 0;
+}
+
+.banner {
+  width: 100vw;
+  height: 20vh;
+  background-color: $slate;
+  margin-bottom: 1.5em;
 }
 
   /* Alignment and Padding */ 
