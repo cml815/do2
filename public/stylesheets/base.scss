@@ -2,7 +2,9 @@
 
 /* {border: 1px solid red;} */
 
-// SCSS variables
+// SCSS VARIABLES
+
+/* Colors */ 
 
 $primary-color: red;
 
@@ -71,7 +73,7 @@ p.large {
 
 img {
   max-width:100%;
-  height:auto;
+  height: auto; 
 }
 
 a {
@@ -80,8 +82,6 @@ a {
   }
 
 /* LAYOUT */
-
-
 
 /* Flexbox */
 
@@ -94,19 +94,37 @@ flex: 0 1;
 flex-direction: column; 
 }
 
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .spaced {
   justify-content: space-between;
 }
 
-/* Containers and Padding */
 
-.center {
-  text-align: center;
-  }
-  
-  .card {
-  
-  }
+/* Containers */
+
+.hero {
+  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+  /* Alignment and Padding */ 
+
+  .center {
+    text-align: center;
+    }
 
   .inner-0 {
     padding: 0; /* redundant */
@@ -115,3 +133,23 @@ flex-direction: column;
   .inner {
     padding: 0 2em;
   } /* default container padding */ 
+
+  // COMPONENTS
+
+  .btn {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  
+  }
+
+  .btn.rounded {
+    transition: .3s ease-in-out;
+    border-radius: 100rem;
+    padding: 0 2.5em;
+    width: 100%;
+  
+  }
