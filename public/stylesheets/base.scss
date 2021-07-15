@@ -1,21 +1,14 @@
-// SCSS variables
-
-$primary-color: #999;
-
-$font-wide: 16px 700 "acumin-pro", Helvetica, Arial, sans-serif;
-
-$font-narrow: 16px 400 acumin-pro-semi-condensed, sans-serif;
-
-$font-narrow-bold: 16px 700 acumin-pro-semi-condensed, sans-serif;
-
-body {
-  background-color: #efefef;
-
-} 
-
-/* Base Styles */
+// Dev only
 
 /* {border: 1px solid red;} */
+
+// SCSS variables
+
+$primary-color: red;
+
+/* $font-base not needed only one font for now */ 
+
+/* Base Styles */
 
 *, *:before, *:after {
   margin: 0;
@@ -39,18 +32,6 @@ font-size: 16px;
 font-family: 'Roboto', Helvetica, Arial, sans-serif;
 background-color: #f2f4f8;
 color: #353535;
-}
-
-.body-wrap {
-}
-
-.body-wrap > .no-pad {
-padding: 0;
-}
-
-a {
-color: #00B7FF;
-text-decoration: none;
 }
 
 ul, ol {
@@ -93,22 +74,15 @@ img {
   height:auto;
 }
 
+a {
+  color: #00B7FF;
+  text-decoration: none;
+  }
+
 /* LAYOUT */
 
-/* General layout */
 
-.center {
-text-align: center;
-}
 
-.card {
-border: solid gray 1px;
-
-}
-
-.inner {
-  padding: 0 2em;
-}
 /* Flexbox */
 
 .flex-container {
@@ -120,8 +94,24 @@ flex: 0 1;
 flex-direction: column; 
 }
 
-
-
 .spaced {
   justify-content: space-between;
 }
+
+/* Containers and Padding */
+
+.center {
+  text-align: center;
+  }
+  
+  .card {
+  
+  }
+
+  .inner-0 {
+    padding: 0; /* redundant */
+  }
+  
+  .inner {
+    padding: 0 2em;
+  } /* default container padding */ 
