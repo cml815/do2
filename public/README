@@ -180,3 +180,7 @@ app.use(function(err, req, res, next) {
 // start server
 app.listen(5000, function(err) {})
 module.exports = app;
+
+Accessibility 
+
+https://www.w3.org/TR/wai-aria-1.1/
