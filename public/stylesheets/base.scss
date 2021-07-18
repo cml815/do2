@@ -108,6 +108,14 @@ flex-direction: column;
   justify-content: space-between;
 }
 
+/* Grid */ 
+
+.grid-c {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+}
+
 
 /* Containers */
 
@@ -129,6 +137,10 @@ flex-direction: column;
   height: 20vh;
   background-color: $slate;
   margin-bottom: 1.5em;
+}
+
+.card-c {
+  display: flex;
 }
 
   /* Alignment and Padding */ 
