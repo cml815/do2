@@ -101,6 +101,57 @@ a {
   background-color: #5f72be;
   margin-bottom: 1.5em; }
 
+/* Gallery styles - hero */
+.paths {
+  /* this is the same as grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+  /* this is the same as grid-template-rows: 300px 300px; */
+  grid-template-rows: repeat(2, 300px); }
+
+/* breweries styles */
+.paths {
+  padding: 2rem; }
+
+.paths > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem; }
+
+.paths > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem; }
+
+.paths > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative; }
+
+.paths > ul > li > figure > img {
+  width: 100%; }
+
+.paths > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%; }
+
+.paths > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem; }
+
+.paths > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666; }
+
+.paths > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem; }
+
 .card-c {
   display: flex; }
 
