@@ -86,7 +86,9 @@ a {
   width: 100%;
   width: 100vw;
   height: 100vh;
-  flex-direction: column; }
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 
 .fullscreen {
   width: 100vw;
