@@ -75,14 +75,21 @@ line-height: 1.5em;
 margin: 2em 0;
 }
 
-p.large {
+.large {
   font-size: 1.25em;
 }
 
-p.xlarge {
+.xlarge {
   font-size: 2em;
   line-height: 1.25em;
   font-weight: bold;
+}
+
+.xxlarge {
+  font-size: 2.5em;
+  line-height: 1.25em;
+  font-weight: bold;
+
 }
 
 img {

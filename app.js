@@ -7,6 +7,7 @@ const exphbs = require('express-handlebars');
 // const sass = require('sass');
 // const sass = require('node-sass');
 const sassMiddleware = require('node-sass-middleware')
+const bodyParser = require('body-parser');
 const favicon = require("serve-favicon");
 
 const port = 5000
@@ -55,6 +56,7 @@ app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
